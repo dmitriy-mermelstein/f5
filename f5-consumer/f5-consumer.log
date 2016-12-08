@@ -1,0 +1,235 @@
+00:00:49.082 INFO  [main][SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.f5.exersice.PublisherConsumerTests], using SpringBootContextLoader
+00:00:49.094 INFO  [main][AbstractContextLoader] Could not detect default resource locations for test class [com.f5.exersice.PublisherConsumerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:00:49.095 INFO  [main][AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [com.f5.exersice.PublisherConsumerTests]: PublisherConsumerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:00:49.264 INFO  [main][SpringBootTestContextBootstrapper] Found @SpringBootConfiguration com.f5.exersice.ConsumerApplication for test class com.f5.exersice.PublisherConsumerTests
+00:00:49.274 INFO  [main][SpringBootTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+00:00:49.297 INFO  [main][SpringBootTestContextBootstrapper] Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+00:00:49.298 INFO  [main][SpringBootTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3daa422a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@31c88ec8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1cbbffcd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@27ce24aa, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@481a996b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3d51f06e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7ed7259e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@28eaa59a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3427b02d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@647e447, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@41fbdac4]
+00:00:49.782 INFO  [main][PublisherConsumerTests] Starting PublisherConsumerTests on DESKTOP-2ESF9UG with PID 5240 (started by Dmitriy in C:\Users\dimer\myspace\mappo\f5-consumer)
+00:00:49.782 INFO  [main][PublisherConsumerTests] No active profile set, falling back to default profiles: default
+00:00:49.815 INFO  [main][AnnotationConfigApplicationContext] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26abb146: startup date [Thu Dec 08 00:00:49 IST 2016]; root of context hierarchy
+00:00:50.814 INFO  [main][PostProcessorRegistrationDelegate$BeanPostProcessorChecker] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [class org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$694e6152] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:00:50.930 INFO  [main][ThreadPoolTaskExecutor] Initializing ExecutorService 
+00:00:51.502 INFO  [main][cluster] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+00:00:51.652 INFO  [cluster-ClusterId{value='584886930c475b14784fa376', description='null'}-localhost:27017][connection] Opened connection [connectionId{localValue:1, serverValue:212}] to localhost:27017
+00:00:51.654 INFO  [cluster-ClusterId{value='584886930c475b14784fa376', description='null'}-localhost:27017][cluster] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 10]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=2074882}
+00:00:51.994 INFO  [main][PublisherConsumer] publisherHandler is set
+00:00:52.143 INFO  [main][DefaultLifecycleProcessor] Starting beans in phase 0
+00:00:52.172 INFO  [main][ConsumerConfig] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [localhost:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = f5sencors
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+00:00:52.217 INFO  [main][ConsumerConfig] ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [localhost:9092]
+	ssl.keystore.type = JKS
+	enable.auto.commit = true
+	sasl.mechanism = GSSAPI
+	interceptor.classes = null
+	exclude.internal.topics = true
+	ssl.truststore.password = null
+	client.id = consumer-1
+	ssl.endpoint.identification.algorithm = null
+	max.poll.records = 2147483647
+	check.crcs = true
+	request.timeout.ms = 40000
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 65536
+	ssl.truststore.type = JKS
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = f5sencors
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	key.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	auto.offset.reset = latest
+
+00:00:52.248 INFO  [main][AppInfoParser] Kafka version : 0.10.0.1
+00:00:52.249 INFO  [main][AppInfoParser] Kafka commitId : a7a17cdec9eaa6c5
+00:00:52.268 INFO  [main][PublisherConsumerTests] Started PublisherConsumerTests in 2.929 seconds (JVM running for 3.838)
+00:00:52.299 INFO  [main][ProducerConfig] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [localhost:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 5000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+00:00:52.310 INFO  [main][ProducerConfig] ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [localhost:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 5000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+00:00:52.311 INFO  [main][AppInfoParser] Kafka version : 0.10.0.1
+00:00:52.311 INFO  [main][AppInfoParser] Kafka commitId : a7a17cdec9eaa6c5
+00:00:52.418 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][AbstractCoordinator] Discovered coordinator DESKTOP-2ESF9UG:9092 (id: 2147483647 rack: null) for group f5sencors.
+00:00:52.422 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][ConsumerCoordinator] Revoking previously assigned partitions [] for group f5sencors
+00:00:52.422 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][KafkaMessageListenerContainer] partitions revoked:[]
+00:00:52.422 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][AbstractCoordinator] (Re-)joining group f5sencors
+00:00:52.443 INFO  [kafka-producer-network-thread | producer-1][Sender] sent message='{"publisher": "1", "time": "1234567","readings": [1, 8, 99,1014,4, 23, 214, 211]}' with offset=3788
+00:00:52.448 INFO  [Thread-1][AnnotationConfigApplicationContext] Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@26abb146: startup date [Thu Dec 08 00:00:49 IST 2016]; root of context hierarchy
+00:00:52.453 INFO  [Thread-1][DefaultLifecycleProcessor] Stopping beans in phase 0
+00:00:52.459 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][KafkaMessageListenerContainer$ListenerConsumer] Consumer stopped
+00:00:52.459 INFO  [Thread-1][KafkaProducer] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.

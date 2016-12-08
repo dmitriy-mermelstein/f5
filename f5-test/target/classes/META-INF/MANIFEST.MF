@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: f5-test
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Dmitriy
+Implementation-Vendor-Id: com.f5.exersice
+Build-Jdk: 1.8.0_112
+Implementation-URL: http://projects.spring.io/spring-boot/f5-test/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
