@@ -1,9 +1,0 @@
-com\f5\exersice\kafka\producer\Sender.class
-com\f5\exersice\kafka\producer\SenderConfig.class
-com\f5\exersice\kafka\data\PublishMessage.class
-com\f5\exersice\kafka\SpringKafkaApplication.class
-com\f5\exersice\kafka\consumer\Receiver.class
-com\f5\exersice\kafka\consumer\ReceiverConfig.class
-com\f5\exersice\kafka\data\DataParser.class
-com\f5\exersice\kafka\producer\Sender$1.class
-com\f5\exersice\kafka\consumer\ReceiverHandler.class

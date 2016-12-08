@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.f5.exersice.kafka.SpringKafkaApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.187 sec - in com.f5.exersice.kafka.SpringKafkaApplicationTests
